@@ -5,19 +5,19 @@ const Skills = () => {
     {
       title: "AI & Machine Learning",
       icon: "🧠",
-      color: "#ffb3c6", // Matte Rose
+      color: "#ffb3c6",
       skills: ["Deep Learning", "Fuzzy Inference Systems", "Computer Vision", "ROS & Gazebo", "Generative AI", "Monte Carlo Simulations"]
     },
     {
       title: "Software Engineering",
       icon: "💻",
-      color: "#d8b4fe", // Soft Lavender
+      color: "#d8b4fe", 
       skills: ["Kotlin", "Android SDK", "React.js & Vite", "Python", "MATLAB", "JavaScript (ES6+)"]
     },
     {
       title: "Data & Architecture",
       icon: "🧱", 
-      color: "#7dd3fc", // New Sky Blue
+      color: "#7dd3fc", 
       skills: ["SQL & Relational DBs", "System Architecture", "Agile / Scrum", "Vercel CI/CD", "Git / Version Control", "Role-Based Access (RBAC)"]
     }
   ];
@@ -44,7 +44,7 @@ const Skills = () => {
                 <span key={i} style={{ 
                   ...styles.tag, 
                   backgroundColor: category.color, 
-                  color: "#0f172a" // Deep navy text for maximum contrast on bright tags
+                  color: "#0f172a" 
                 }}>
                   {skill}
                 </span>
@@ -85,13 +85,13 @@ const styles = {
   underline: {
     height: '6px',
     width: '100px',
-    backgroundColor: '#7dd3fc', // Sky Blue underline to balance the Pink title
+    backgroundColor: '#7dd3fc', 
     borderRadius: '3px',
     marginBottom: '1.5rem',
   },
   introText: {
     fontSize: '1.25rem',
-    color: '#cbd5e1', // High-contrast Silver Blue
+    color: '#cbd5e1', 
     maxWidth: '750px',
     lineHeight: '1.7',
   },
@@ -101,7 +101,7 @@ const styles = {
     gap: '2.5rem',
   },
   glassCard: {
-    backgroundColor: 'rgba(15, 23, 42, 0.8)', // Solid Deep Navy base
+    backgroundColor: 'rgba(15, 23, 42, 0.8)', 
     padding: '2.5rem',
     borderRadius: '24px',
     border: '1px solid rgba(255, 255, 255, 0.12)',
@@ -132,7 +132,7 @@ const styles = {
     padding: '0.6rem 1.2rem',
     borderRadius: '12px',
     fontSize: '0.95rem',
-    fontWeight: '800', // Boldest text for readability
+    fontWeight: '800', 
     boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
   },
   footerNote: {

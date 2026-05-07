@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Footer = () => {
-  // This automatically gets the current year so you never have to update it!
   const currentYear = new Date().getFullYear(); 
 
   return (
@@ -48,7 +47,7 @@ const Footer = () => {
         </a>
       </div>
 
-      {/* Copyright & Tech Flex */}
+      {/* Copyright */}
       <p style={{ margin: '0 0 0.5rem 0', fontSize: '0.9rem' }}>
         © {currentYear} Nuno Filipe. All rights reserved.
       </p>

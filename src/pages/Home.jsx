@@ -33,7 +33,6 @@ const Home = () => {
   );
 };
 
-// Smooth, elegant inline styles
 const styles = {
   container: {
     display: 'flex',
@@ -54,7 +53,7 @@ const styles = {
     color: '#f8f9fa', 
   },
   highlight: {
-    color: '#ffb3c6', // Soft, smooth matte rose pink
+    color: '#ffb3c6', 
   },
   subHeadline: {
     fontSize: '1.5rem',
@@ -87,7 +86,7 @@ const styles = {
   },
   accentButton: {
     padding: '0.8rem 2rem',
-    backgroundColor: '#ffb3c6', // Smooth rose pink
+    backgroundColor: '#ffb3c6',
     color: '#1a1a24', 
     textDecoration: 'none',
     border: '2px solid #ffb3c6',

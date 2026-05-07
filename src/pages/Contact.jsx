@@ -62,13 +62,13 @@ const styles = {
     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
     gap: '2rem',
     maxWidth: '900px',
-    margin: '0 auto', // Centers the grid in the middle of the page
+    margin: '0 auto',
   },
   glassCard: {
     display: 'flex',
     alignItems: 'center',
     gap: '1.5rem',
-    backgroundColor: 'rgba(15, 23, 42, 0.8)', // Deep navy background for max contrast
+    backgroundColor: 'rgba(15, 23, 42, 0.8)', 
     padding: '2rem',
     borderRadius: '20px',
     border: '1px solid rgba(255, 255, 255, 0.12)',
@@ -80,14 +80,14 @@ const styles = {
     fontSize: '2.5rem',
   },
   cardTitle: {
-    color: '#ffb3c6', // Vibrant pink to make the title pop
+    color: '#ffb3c6', 
     margin: '0 0 0.5rem 0',
     fontSize: '1.4rem',
     fontWeight: '800',
     letterSpacing: '0.5px',
   },
   cardText: {
-    color: '#cbd5e1', // High contrast silver for the subtext
+    color: '#cbd5e1', 
     margin: 0,
     fontSize: '1.05rem',
     fontWeight: '500',

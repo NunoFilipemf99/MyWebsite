@@ -6,14 +6,12 @@ const AILab = () => {
   const [hiddenLayer, setHiddenLayer] = useState([0, 0, 0, 0]);
   const [outputLayer, setOutputLayer] = useState({ pos: 0.33, pro: 0.33, neg: 0.33 });
 
-  // Dictionaries
   const dictionaries = {
     pos: ['good', 'great', 'excellent', 'love', 'amazing', 'perfect', 'happy', 'yes', 'awesome', 'fast'],
     pro: ['api', 'robust', 'scalable', 'data', 'model', 'system', 'react', 'python', 'architecture', 'deploy'],
     neg: ['bad', 'error', 'bug', 'broken', 'slow', 'fail', 'worst', 'crash', 'no', 'terrible', 'issue']
   };
 
-  // --- MATH UTILITIES ---
   const softmax = (arr) => {
     const exps = arr.map(x => Math.exp(x));
     const sum = exps.reduce((a, b) => a + b, 0);
@@ -28,7 +26,6 @@ const AILab = () => {
       return;
     }
 
-    // 🚀 --- THE NUNO EASTER EGG --- 🚀
     if (text.toLowerCase().includes('nuno')) {
       setInputLayer([1.0, 1.0, 0.0]);       
       setHiddenLayer([1.0, 1.0, 1.0, 0.0]); 
@@ -38,25 +35,25 @@ const AILab = () => {
 
     const words = text.toLowerCase().split(/\s+/);
     
-    // 1. INPUT LAYER: Linear scaling clamped at 1.0 
+    // INPUT LAYER 
     const i1 = Math.min(words.filter(w => dictionaries.pos.includes(w)).length * 0.5, 1);
     const i2 = Math.min(words.filter(w => dictionaries.pro.includes(w)).length * 0.5, 1);
     const i3 = Math.min(words.filter(w => dictionaries.neg.includes(w)).length * 0.5, 1);
     setInputLayer([i1, i2, i3]);
 
-    // 2. HIDDEN LAYER: ReLU Activation 
+    // HIDDEN LAYER 
     const h1 = Math.max(0, (i1 * 3.0) - (i3 * 2.0)); 
     const h2 = Math.max(0, (i1 * 1.5) + (i2 * 1.5)); 
     const h3 = Math.max(0, (i2 * 2.0) + (i3 * 1.0)); 
     const h4 = Math.max(0, (i3 * 3.0) - (i1 * 2.0)); 
     setHiddenLayer([h1, h2, h3, h4]);
 
-    // 3. OUTPUT LAYER: Aggressive Logits 
+    // OUTPUT LAYER
     const logitPos = (h1 * 4.0) - (h2 * 0.5) - (h3 * 1.0) - (h4 * 3.0);
     const logitPro = (h2 * 3.0) + (h3 * 1.5) - (h1 * 2.0) - (h4 * 2.0);
     const logitNeg = (h4 * 4.0) + (h3 * 0.5) - (h1 * 3.0) - (h2 * 1.0);
 
-    // 4. SOFTMAX
+    // SOFTMAX
     const [finalPos, finalPro, finalNeg] = softmax([logitPos, logitPro, logitNeg]);
 
     setOutputLayer({ pos: finalPos, pro: finalPro, neg: finalNeg });
@@ -75,7 +72,7 @@ const AILab = () => {
       
       {/* SOLID, Elegant Explainer Box */}
       <div style={{ 
-        backgroundColor: '#0f172a', // Solid deep navy base 
+        backgroundColor: '#0f172a', 
         padding: '1.5rem 2rem', 
         borderRadius: '16px', 
         marginBottom: '2.5rem', 
@@ -105,8 +102,8 @@ const AILab = () => {
           padding: '1.2rem 1.5rem', 
           borderRadius: '16px', 
           border: '1px solid rgba(255, 255, 255, 0.2)', 
-          backgroundColor: '#0f172a', // Solid deep navy base 
-          color: '#ffffff', // Bright white text           
+          backgroundColor: '#0f172a', 
+          color: '#ffffff',           
           fontSize: '1.1rem',
           boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
           outline: 'none'

@@ -19,10 +19,8 @@ const Header = () => {
       left: 0,
       width: '100%',
       zIndex: 1000,
-      /* Changed to your Matte Rose Pink with 90% opacity */
       backgroundColor: scrolled ? 'rgba(255, 179, 198, 0.9)' : 'transparent',
       backdropFilter: scrolled ? 'blur(12px)' : 'none',
-      /* Added a subtle pink glow to the shadow */
       boxShadow: scrolled ? '0 4px 20px rgba(255, 179, 198, 0.3)' : 'none',
       transition: 'all 0.3s ease',
       padding: '1rem 0'
@@ -31,7 +29,6 @@ const Header = () => {
         <div className="logo">
           <Link to="/" style={{ textDecoration: 'none' }}>
             <h1 style={{ 
-              /* This is the magic trick: Silver at the top, Dark Navy when scrolled! */
               color: scrolled ? '#0f172a' : '#cbd5e1', 
               margin: 0,
               fontSize: '1.5rem',

@@ -22,7 +22,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* Fast Facts / TL;DR Card */}
+        {/* Fast Facts / TL DR Card */}
         <div style={styles.glassCard}>
           <h3 style={styles.cardTitle}>Quick Facts</h3>
           <ul style={styles.list}>
@@ -92,7 +92,6 @@ const About = () => {
   );
 };
 
-// Styles (Same as before, using the better contrast colors)
 const styles = {
   container: {
     padding: '2rem 5%',
