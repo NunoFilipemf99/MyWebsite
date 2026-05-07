@@ -6,34 +6,59 @@ const Projects = () => {
     {
       title: "Master's Dissertation",
       subtitle: "Applied AI in Sports Analytics",
-      path: "/projects/dissertation", // Matches App.jsx
+      path: "/projects/dissertation", 
       category: "Artificial Intelligence",
       color: "#ffb3c6",
-      description: "Research focused on deep learning pipelines for real-time player tracking and performance visualization in Futsal."
+      description: "Research focused on deep learning pipelines, Elo ratings, and Monte Carlo simulations for predicting Futsal match outcomes."
     },
     {
       title: "Kotlin Implementation",
-      subtitle: "Software Engineering Logic",
-      path: "/projects/kotlin", // Matches App.jsx
+      subtitle: "Coffee Shop Mobile App",
+      path: "/projects/kotlin", 
       category: "Software Engineering",
       color: "#7dd3fc",
-      description: "A deep dive into robust application logic, modern JVM paradigms, and scalable backend architecture."
+      description: "A dual-interface Android application featuring real-time order tracking, secure authentication, and a dedicated admin dashboard for inventory management."
     },
     {
       title: "This Portfolio Website",
       subtitle: "Full-Stack React Portfolio",
-      path: "/projects/portfolio", // Matches App.jsx
+      path: "/projects/portfolio", 
       category: "Web Development",
       color: "#d8b4fe",
-      description: "A high-performance interactive platform built with React, featuring neural network visualizations and smooth UI."
+      description: "A high-performance interactive platform built with React and Vite, featuring neural network visualizations and responsive UI design."
     },
     {
-      title: "Python in CoppeliaSim",
-      subtitle: "Robotics & Simulation",
-      path: "/projects/robotics", // Matches App.jsx
-      category: "Robotics / AI",
+      title: "AI for Mobile Robots",
+      subtitle: "2D Occupancy Grid Mapping",
+      path: "/projects/robotics", 
+      category: "Robotics / ROS",
       color: "#cbd5e1",
-      description: "Early foundational work in robotic path-finding, sensor integration, and algorithmic control within a simulated environment."
+      description: "Engineered a ROS-based mapping system using a TurtleBot3, fusing laser scans and odometry data via TF transformations to build real-time spatial grids."
+    },
+    {
+      title: "Fuzzy Inference System",
+      subtitle: "Remote Work Advisor",
+      path: "/projects/fuzzylogic", 
+      category: "Algorithms / MATLAB",
+      color: "#6ee7b7", 
+      description: "A complex mathematical model built entirely in MATLAB scripts using Mamdani architecture to quantify human reasoning and qualitative decision-making."
+    },
+    {
+      title: "Agile Service Platform",
+      subtitle: "E-Commerce & Staff Management",
+      path: "/projects/agile", 
+      category: "System Design / Agile",
+      color: "#fbbf24", 
+      description: "Collaborated in an Agile team to engineer a full-stack booking marketplace, taking direct ownership of the relational database schema and the order processing lifecycle."
+    },
+    // The New 7th Project
+    {
+      title: "Workforce Management App",
+      subtitle: "Clock In/Out Android System",
+      path: "/projects/clockinout", 
+      category: "Mobile Development",
+      color: "#818cf8", // Indigo
+      description: "An enterprise-grade Android application engineered for time logistics, featuring robust Role-Based Access Control for administrators and employees."
     }
   ];
 
@@ -43,7 +68,7 @@ const Projects = () => {
         <h1 className="project-title-text" style={{ color: '#ffb3c6' }}>Featured Projects</h1>
         <div className="project-underline" style={{ backgroundColor: '#d8b4fe' }}></div>
         <p className="project-body-text" style={{ fontSize: '1.25rem', maxWidth: '800px' }}>
-          A collection of my work spanning Artificial Intelligence, Software Engineering, and Robotic simulations.
+          A collection of my work spanning Machine Learning, Software Engineering, Mobile Development, and System Architecture.
         </p>
       </header>
 

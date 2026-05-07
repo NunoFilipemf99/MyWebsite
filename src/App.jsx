@@ -17,6 +17,9 @@ import ProjectDissertation from './pages/Dissertation';
 import ProjectWebsite from './pages/PortfolioDev';
 import ProjectKotlin from './pages/Kotlin'; 
 import ProjectCopelia from './pages/RoboticsSim';
+import ProjectFuzzyLogic from './pages/FuzzyLogic';
+import ProjectAgileBooking from './pages/AgileBooking';
+import ProjectClockInOut from './pages/ClockInOut';
 
 function App() {
   return (
@@ -42,6 +45,9 @@ function App() {
           <Route path="/projects/portfolio" element={<ProjectWebsite />} />
           <Route path="/projects/kotlin" element={<ProjectKotlin />} />
           <Route path="/projects/robotics" element={<ProjectCopelia />} />
+          <Route path="/projects/fuzzylogic" element={<ProjectFuzzyLogic />} />
+          <Route path="/projects/agile" element={<ProjectAgileBooking />} />
+          <Route path="/projects/clockinout" element={<ProjectClockInOut />} />
           
           <Route path="/ailab" element={<AILab />} />
         </Routes>
