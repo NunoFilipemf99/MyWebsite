@@ -12,7 +12,7 @@ const About = () => {
         <div style={styles.mainBio}>
           <h2 style={styles.sectionSubtitle}>The Journey</h2>
           <p style={styles.paragraph}>
-            My path into software engineering didn't start with just writing web applications; it started with a deep curiosity about how systems learn and adapt. Based in <strong style={styles.highlightLavender}>Leicester, UK</strong>, I am a Software Engineer who specializes in bridging the gap between theoretical machine learning and production-ready software.
+            My path into software engineering didn't start with just writing web applications, it started with a deep curiosity about how systems learn and adapt. Based in <strong style={styles.highlightLavender}>Leicester, UK</strong>, I am a Software Engineer who specializes in bridging the gap between theoretical machine learning and production-ready software.
           </p>
           <p style={styles.paragraph}>
             I hold a <strong style={styles.highlightLavender}>Master's degree in Artificial Intelligence</strong>, where I spent my time diving deep into the mathematics of neural architectures, robotics, and advanced data processing. Rather than just learning how to ping an API, I learned how to engineer algorithms from scratch. 
@@ -64,7 +64,7 @@ const About = () => {
             <div style={styles.hobbyIcon}>⚽</div>
             <h4 style={styles.hobbyTitle}>Competitive Futsal</h4>
             <p style={styles.hobbyDesc}>
-              I don't just play for fun; I compete. The fast-paced, high-pressure environment of competitive Futsal keeps my decision-making sharp and my teamwork skills honed.
+              I don't just play for fun, I compete. The fast-paced, high-pressure environment of competitive Futsal keeps my decision-making sharp and my teamwork skills honed.
             </p>
           </div>
           
