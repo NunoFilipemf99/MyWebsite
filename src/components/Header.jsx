@@ -13,9 +13,29 @@ const Header = () => {
   }, []);
 
   return (
-    <header style={{ boxShadow: scrolled ? '0 4px 10px rgba(0,0,0,0.1)' : '0 2px 5px rgba(0,0,0,0.1)' }}>
+    <header style={{ 
+      boxShadow: scrolled ? '0 4px 10px rgba(0,0,0,0.1)' : '0 2px 5px rgba(0,0,0,0.1)',
+      /* You might already have background colors or other styles in your CSS, 
+         this just handles the dynamic shadow you set up! */
+    }}>
       <nav>
-        <div className="logo">Nuno Filipe</div>
+        
+        {/* === UPDATED LOGO BUTTON === */}
+        <div className="logo">
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <h1 style={{ 
+              color: '#ffb3c6', 
+              margin: 0,
+              fontSize: '1.5rem', // You can tweak this if you want the name bigger/smaller
+              cursor: 'pointer',
+              transition: 'opacity 0.2s ease'
+            }}>
+              Nuno Filipe
+            </h1>
+          </Link>
+        </div>
+        {/* =========================== */}
+
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
