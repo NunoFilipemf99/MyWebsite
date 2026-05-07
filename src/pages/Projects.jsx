@@ -51,26 +51,29 @@ const Projects = () => {
       color: "#fbbf24", 
       description: "Collaborated in an Agile team to engineer a full-stack booking marketplace, taking direct ownership of the relational database schema and the order processing lifecycle."
     },
-    // The New 7th Project
     {
       title: "Workforce Management App",
       subtitle: "Clock In/Out Android System",
       path: "/projects/clockinout", 
       category: "Mobile Development",
-      color: "#818cf8", // Indigo
+      color: "#818cf8",
       description: "An enterprise-grade Android application engineered for time logistics, featuring robust Role-Based Access Control for administrators and employees."
     }
   ];
 
   return (
     <div className="project-container">
-      <header style={{ marginBottom: '4rem' }}>
+      {/* The Invisible Spacer */}
+      <div style={{ height: '120px', width: '100%' }}></div>
+
+      {/* THE FIX: Changed from <header> to <div> so global CSS doesn't make it sticky! */}
+      <div style={{ marginBottom: '4rem' }}>
         <h1 className="project-title-text" style={{ color: '#ffb3c6' }}>Featured Projects</h1>
         <div className="project-underline" style={{ backgroundColor: '#d8b4fe' }}></div>
         <p className="project-body-text" style={{ fontSize: '1.25rem', maxWidth: '800px' }}>
           A collection of my work spanning Machine Learning, Software Engineering, Mobile Development, and System Architecture.
         </p>
-      </header>
+      </div>
 
       <div style={styles.grid}>
         {projectList.map((project, index) => (

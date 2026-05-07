@@ -1,22 +1,24 @@
+import React from 'react';
+
 const Skills = () => {
   const skillCategories = [
     {
       title: "AI & Machine Learning",
       icon: "🧠",
       color: "#ffb3c6", // Matte Rose
-      skills: ["Neural Networks", "Computer Vision", "Deep Learning", "Predictive Modeling", "Robotics", "NLP"]
+      skills: ["Deep Learning", "Fuzzy Inference Systems", "Computer Vision", "ROS & Gazebo", "Generative AI", "Monte Carlo Simulations"]
     },
     {
       title: "Software Engineering",
       icon: "💻",
       color: "#d8b4fe", // Soft Lavender
-      skills: ["React.js", "Node.js", "Python", "JavaScript (ES6+)", "RESTful APIs", "Full-Stack Dev"]
+      skills: ["Kotlin", "Android SDK", "React.js & Vite", "Python", "MATLAB", "JavaScript (ES6+)"]
     },
     {
       title: "Data & Architecture",
       icon: "🧱", 
       color: "#7dd3fc", // New Sky Blue
-      skills: ["SQL / NoSQL", "Data Pipelines", "Scalable Systems", "Git / Version Control", "MLOps", "Linux"]
+      skills: ["SQL & Relational DBs", "System Architecture", "Agile / Scrum", "Vercel CI/CD", "Git / Version Control", "Role-Based Access (RBAC)"]
     }
   ];
 
@@ -56,7 +58,7 @@ const Skills = () => {
       <div style={styles.footerNote}>
         <h3 style={styles.footerTitle}>The Stack & Beyond</h3>
         <p style={styles.footerText}>
-          My philosophy is simple: tools change, but core principles remain. I focus on writing <strong style={{color: '#ffb3c6'}}>clean, maintainable code</strong> and building <strong style={{color: '#7dd3fc'}}>intelligent algorithms</strong> that serve a purpose. Whether it's a React frontend or a Python-based neural net, the goal is always performance and scalability.
+          My philosophy is simple: tools change, but core principles remain. I focus on writing <strong style={{color: '#ffb3c6'}}>clean, maintainable code</strong> and building <strong style={{color: '#7dd3fc'}}>intelligent algorithms</strong> that serve a purpose. Whether it's a React frontend, a Python-based neural net, or a Kotlin mobile app, the goal is always performance and scalability.
         </p>
       </div>
     </section>
